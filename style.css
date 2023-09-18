@@ -1,0 +1,370 @@
+body,head{
+    margin: 0;
+    border: 0;
+    background-color: #8CC461;
+}
+
+header{
+    width: 70vw;
+    height: 20vh;
+    margin: auto;
+    margin-top: 4rem;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+}
+.game_name{
+   font-size: 2.4rem;
+   width: 50%;
+}
+.game_name p, .score1 p, .score2 p{
+    margin: 1px;
+    padding: 1px;
+}
+
+.score_container{
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+}
+.score1,.score2{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #656565;
+    height: 80%;
+    width: 150px;
+    margin: 1rem;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 8px;
+    
+}
+.container{
+    display: flex;
+    height:70vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.tri_rules{
+    position: absolute;
+    display: flex;
+    height: 360px;
+    width: 500px;
+    top: 150px;
+    left: 400px;
+    /* background-color: wheat; */
+    
+}
+/* .lines{
+    display: flex;
+} */
+.line {
+    width: 133px; /* Adjust the width as needed */
+    height: 15px; /* Adjust the thickness of the lines as needed */
+    background-color: #000000A3; /* Adjust the line color as needed */
+    margin: 0; /* Adjust the margin between lines as needed */
+    
+  }
+
+#line2{
+    background: linear-gradient(to right, #000000A3 70%, transparent 10%);
+    transform-origin: top right;
+    transform: rotate(-60deg);
+}
+
+#line3 {
+    width: 105px;
+    transform-origin: top left;
+    transform: rotate(-300deg);
+}
+
+.button{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    border-radius: 50%;
+    
+}
+#button1{
+    position: relative;
+    bottom: 35px;
+    left: 95px;
+    background-color: #0074B6;
+}
+
+#button2{
+    position: relative;
+    bottom: 30px;
+    right: 80px;
+    background-color: #BD00FF;
+    transform: rotate(60deg);
+}
+#button3{
+    position: relative;
+    bottom: 30px;
+    right: 80px;
+    background-color: #FFA943;
+    transform: rotate(-60deg);
+    
+}
+
+
+
+.btn{
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: white;
+}
+#rock_img{
+    width: 60px;
+}
+
+#paper_img{
+    width: 60px;
+}
+
+#scissor_img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.rules_btn{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    border-radius: 8px;
+    border: 3px solid white;
+    font-size: 16px;
+    color: white;
+    bottom: 15px;
+    right: 25px;
+    background-color: #8CC461;
+    
+}
+
+.rules_btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+.next_btn{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    border-radius: 8px;
+    border: 3px solid white;
+    font-size: 16px;
+    color: white;
+    bottom: 15px;
+    right: 125px;
+    background-color: #8CC461;
+    display: none;
+    
+}
+.next_btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.rules{
+    position: absolute;
+    bottom: 65px;
+    right: 25px;
+    background-color: #004429;
+    border: 8px solid white;
+    border-radius: 8px;
+    color: white;
+    width: 278px;
+    height: 335px;
+    display: none;
+}
+.rules >h2{
+    text-align: center;
+}
+
+.cancel_btn{
+    position: absolute;
+    bottom: 402px;
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 8px solid white;
+    background-color: red;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+.on_selection{
+    display:none;
+    width: 850px;
+    height:400px;
+    justify-content: space-between;
+    
+    
+}
+.user{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.mid_contents{
+    margin: auto;
+    color: white;
+}
+
+.computer{
+    /* background-color: #77dd77; */
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.box1{
+    height:180px;
+    width: 180px;
+    background-color: #66b032;
+    margin: 20px;
+    position: absolute;
+    
+}
+
+.box2{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    background-color: #ffa500;
+    margin: 20px;
+}
+
+
+.box3{
+    height:260px;
+    width: 260px;
+    background-color: #50c878;
+    margin: 20px;
+    position: absolute;
+
+}
+.box4{
+    height:220px;
+    width: 220px;
+    background-color:#7EE87E;
+    margin: 15px;
+    position: absolute;
+}
+.user_selection,.computer_selection{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    position: absolute;
+    background-color: white;
+}
+
+.user,.computer,.box1,.box2,.box3,.box4,.user_selection,.computer_selection{
+    border-radius: 50%;
+}
+.result_outcome{
+    font-size: 40px;
+    text-align: center;
+    line-height: 0.2px;
+}
+
+#against{
+    font-size: 30px;
+    text-align: center;
+    line-height: 0.1px;
+}
+
+.play_again{
+    background-color: white;
+    width: 170px;
+    height: 40px;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+    border-color: white;
+    margin-top: 20px;
+}
+
+.play_again:hover{
+    background-color:#8CC461;
+    color:white ;
+    transform: scale(1.1);
+
+}
+
+#comp_box2{
+    background-color: #BD00FF;
+}
+
+.trophy_img{
+    height: 300px;
+    width: 500px;
+    margin: auto;
+}
+.trophy_img2{
+    position:relative;
+    right: 350px;
+}
+.won_game p:nth-child(2){
+    font-size: 60px;
+    font-weight: 600px;
+    line-height: 0.2px;
+    color: white;
+    padding-left: 250px;
+}
+
+.won_game p:nth-child(3){
+    font-size: 40px;
+    font-weight: 600px;
+    color: white;
+    padding-left: 190px;
+    line-height: 0.1px;
+}
+
+.won_game{
+    margin: auto;
+    margin-top: 80px;
+    display: none;
+}
+.won_img{
+    margin-left:50px;
+}
+
+#won_play_again{
+    position: absolute;
+    left: 630px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+
+}
+.button{
+    transform: scale(1.1);
+}
+.select_img:hover{
+    transform: scale(1.2);
+
+}
+
+

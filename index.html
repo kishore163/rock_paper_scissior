@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="game_name">
+                <p>Rock</p>
+                <p>Paper</p>
+                <p>Scissor</p>
+        </div>
+        <div class="score_container">
+                <div class="score1">
+                    <p>COMPUTER</p>
+                    <p>SCORE</p>
+                    <h1 id="computer_score">0</h1>
+                </div>
+                <div class="score2">
+                    <p>YOUR</p>
+                    <p>SCORE</p>
+                    <h1 id="user_score">0</h1>
+                </div>
+        </div>
+    </header>
+    <div class="container" id="container">
+        <div class="tri_rules" id="tri_rules">
+            <div class="lines">
+                <div class="line" id="line1">
+                    <div class="button" id="button1" >
+                        <button class="btn" onclick="game('scissor')">
+                            <img src="scissor.png" id="scissor_img" class="select_img">
+
+                        </button>
+                    </div>
+                </div>
+
+                <div class="line" id="line2">
+                    <div class="button" id="button2">
+                        <button class="btn" onclick="game('paper')">
+                            <img src="paper.png" id="paper_img" class="select_img">
+
+                        </button>
+                    </div>
+                </div>
+                <div class="line" id="line3">
+                    <div class="button" id="button3">
+                        <button class="btn" onclick="game('rock')">
+                            <img src="rock.png" id="rock_img" class="select_img">
+
+                        </button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    <button class="rules_btn" onclick="display_rules_and_cancel_btn()">RULES</button>
+    <button class="next_btn" id="next_btn" onclick="next()">Next</button>
+
+        <div class="rules" id="rules">
+            <h2>GAME RULES</h2>
+            <ul class="game_rule_points">
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li><br>
+                <li>Agree ahead of time whether you"ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li><br>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br>
+                <li>If both players lay down the same hand, each player lays down another hand</li><br>
+            </ul>
+        </div>
+
+        <button class="cancel_btn " id="cancel_btn" onclick="do_not_display_rulesAndCancelBtn()">X</button>
+
+        <div class="on_selection" id="on_selection">
+            <div class="user" id="user">Your Choice
+                <div class="box3" id="user_box3">
+                    <div class="box4" id="user_box4">
+                        <div class="box1" id="user_box1">
+                            <div class="box2" id="user_box2">
+                                <div class="user_selection">
+                                    <img  id="user_img" sr
+                                    c="paper.png " class="user_img"  >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid_contents">
+                <p class="result_outcome" id="result_outcome">YOU WIN</p>
+                <p id="against">Against PC</p>
+                <button class="play_again" onclick="reset_default(0)">Play Again</button>
+            </div>
+            <div class="computer" id="computer">Computer Choice
+                <div class="box3" id="comp_box3">
+                    <div class="box4" id="comp_box4">
+                        <div class="box1" id="comp_box1">
+                            <div class="box2" id="comp_box2">
+                                <div class="computer_selection">
+                                    <img id="computer_img" src="paper.png " class="computer_img"  >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="won_game" id="won_game">
+            <div class="won_img">
+                <img src="trophy.png" class="trophy_img">
+                <img src="trophy1.png"  class="trophy_img2">
+            
+
+            </div>
+            
+            <p>Hurray!!</p>
+            <p>You won the game</p>
+            <button class="play_again" id="won_play_again" onclick="reset_default(1)">Play Again</button>
+            
+        </div>
+        
+        
+    
+        <script src="script.js"></script>
+        
+      
+    </div>
+    
+    
+</body>
+</html>
